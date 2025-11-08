@@ -1,0 +1,23 @@
+package com.example.whiteboard.model;
+
+public class DrawMessage {
+    private double x;
+    private double y;
+    private boolean dragging;
+    private String color;
+    private double width;
+    private String sessionId;
+
+    public DrawMessage() {}
+
+    public DrawMessage(double x, double y, boolean dragging, String color, double width, String sessionId) {
+        this.x = x; this.y = y; this.dragging = dragging;
+        this.color = color; this.width = width; this.sessionId = sessionId;
+    }
+    public double getX() { return x; } public void setX(double x) { this.x = x; }
+    public double getY() { return y; } public void setY(double y) { this.y = y; }
+    public boolean isDragging() { return dragging; } public void setDragging(boolean dragging) { this.dragging = dragging; }
+    public String getColor() { return color; } public void setColor(String color) { this.color = color; }
+    public double getWidth() { return width; } public void setWidth(double width) { this.width = width; }
+    public String getSessionId() { return sessionId; } public void setSessionId(String sessionId) { this.sessionId = sessionId; }
+}
